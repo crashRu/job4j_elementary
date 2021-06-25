@@ -3,12 +3,11 @@ package ru.job4j.calculator;
 public class Calculator {
     public static void main(String[] args) {
 
-        int six = 6, four = 4, five = 5, sixDivTwo, fiveMinusTwo, fourTimeTwo;
+        int  two = 2, six = 6, four = 4, five = 5, sixDivTwo, fiveMinusTwo, fourTimeTwo;
 
-
-        sixDivTwo = six / four;
-        fiveMinusTwo = five - four;
-        fourTimeTwo = four * four;
+        sixDivTwo = six / two;
+        fiveMinusTwo = five - two;
+        fourTimeTwo = four * two;
 
         System.out.println(sixDivTwo);
         System.out.println(fiveMinusTwo);
