@@ -8,8 +8,7 @@ public class Converter {
     }
 
     public static float rubleToDollar(float value) {
-        float rsl = (float) (value / 72.26); /* формула перевода рублей в доллары. */
-        return rsl;
+        return (float) (value / 72.26);
     }
 
     public static void main(String[] args) {
