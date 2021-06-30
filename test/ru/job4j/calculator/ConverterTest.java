@@ -16,7 +16,7 @@ public class ConverterTest {
     }
 
     @Test
-    public void whenConvert600RblThen3Dlr() {
+    public void whenConvert600RblThen8Dlr() {
         float in = 600;
         float expected = (float) (in / 72.26);
         float out = Converter.rubleToDollar(in);
@@ -25,7 +25,7 @@ public class ConverterTest {
     }
 
     @Test
-    public void whenConvert0RblThen3Dlr() {
+    public void whenConvert0RblThen0Dlr() {
         float in = 0;
         float expected = (float) (in / 72.26);
         float out = Converter.rubleToDollar(in);
