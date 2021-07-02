@@ -17,7 +17,7 @@ public class FitTest {
     }
 
     @Test
-    public void whenWoman120Then46() {
+    public void whenWoman120Then23() {
         float in = 120;
         float expected = (float) 23;
         System.out.println(expected);
