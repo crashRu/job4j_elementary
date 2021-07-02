@@ -17,9 +17,9 @@ public class FitTest {
     }
 
     @Test
-    public void whenWoman120Then23() {
+    public void whenWoman120Then11() {
         float in = 120;
-        float expected = (float) 23;
+        float expected = (float) 11;
         System.out.println(expected);
         short out = (short) Fit.womanWeight((short) in);
         Assert.assertEquals(expected, out, 0.01);
