@@ -2,17 +2,15 @@ package ru.job4j.array;
 
 import java.util.Arrays;
 
+import static ru.job4j.array.SwapBorder.swap;
 public class SortSelected {
 
     public static int[] sort(int[] data) {
+        int arraySize = data.length - 1;
         for (int index = 0; index < data.length; index++) {
-            int min = MinDiapason.findMin(data, index, data.length - 1);
-            int currentMinIndex = FindLoop.indexOf(data, min, 0, data.length);
-            if (currentMinIndex != index) {
-                int temp = data[index];
-                data[index] = data[currentMinIndex];
-                data[currentMinIndex] = temp;
-            }
+            int min = MinDiapason.findMin(data, index, arraySize);
+            int currentMinIndex = FindLoop.indexOf(data, min, index, arraySize);
+            swap(data, index, currentMinIndex);
         }
         return data;
     }
