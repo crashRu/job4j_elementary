@@ -2,7 +2,6 @@ package ru.job4j.condition;
 
 public class Max {
     public static int maxValue(int a, int b) {
-       // return Math.max(a, b); // по пройденому материалу на изи))
         return a > b ? a : b;
     }
 
