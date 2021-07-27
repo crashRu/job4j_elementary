@@ -5,6 +5,11 @@ public class Max {
         return a > b ? a : b;
     }
 
+    public static int maxValue(int a, int b, int c) {
+        int rsl = maxValue(a, b);
+        return rsl > c ? rsl : c;
+    }
+
     public static void main(String[] args) {
         System.out.println(maxValue(3, 4));
         System.out.println(maxValue(4, 4));
