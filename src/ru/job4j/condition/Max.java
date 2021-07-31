@@ -6,8 +6,11 @@ public class Max {
     }
 
     public static int maxValue(int a, int b, int c) {
-        int rsl = maxValue(a, b);
-        return rsl > c ? rsl : c;
+        return maxValue(maxValue(a, b), c);
+    }
+
+    public static int maxValue(int a, int b, int c, int d) {
+        return maxValue(maxValue(a, b), maxValue(c, d));
     }
 
     public static void main(String[] args) {
