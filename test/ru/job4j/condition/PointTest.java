@@ -11,7 +11,8 @@ public class PointTest {
         int y1 = 0;
         int x2 = 2;
         int y2 = 0;
-        double out = Point.distance(x1, y1, x2, y2);
+        Point point = new Point(x1, y1, x2, y2);
+        double out = point.distance(point);
         Assert.assertEquals(expected, out, 0.01);
     }
 
@@ -22,7 +23,8 @@ public class PointTest {
         int y1 = 2;
         int x2 = 2;
         int y2 = 2;
-        double out = Point.distance(x1, y1, x2, y2);
+        Point point = new Point(x1, y1, x2, y2);
+        double out = point.distance(point);
         Assert.assertEquals(expected, out, 0.01);
     }
 
@@ -33,7 +35,8 @@ public class PointTest {
         int y1 = 3;
         int x2 = 2;
         int y2 = 1;
-        double out = Point.distance(x1, y1, x2, y2);
+        Point point = new Point(x1, y1, x2, y2);
+        double out = point.distance(point);
         Assert.assertEquals(expected, out, 0.01);
     }
 
@@ -44,7 +47,8 @@ public class PointTest {
         int y1 = 2;
         int x2 = 4;
         int y2 = 0;
-        double out = Point.distance(x1, y1, x2, y2);
+        Point point = new Point(x1, y1, x2, y2);
+        double out = point.distance(point);
         Assert.assertEquals(expected, out, 0.01);
     }
 }
